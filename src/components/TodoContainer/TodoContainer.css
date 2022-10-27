@@ -1,0 +1,29 @@
+.todoContainer{
+    color:white;
+    margin-top:-15%;
+    width: 38%;
+
+}
+
+
+.titleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+
+input:focus{
+    border: 0;
+    outline: 0;
+}
+
+input:active{
+    border: 0;
+    
+}
+
+
+
+

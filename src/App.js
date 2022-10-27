@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import TodoContainer from './components/TodoContainer/TodoContainer';
 
 function App() {
+  const [darkMode,setDarkMode] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"  
+    style={{
+
+      backgroundColor: darkMode ? "hsl(235, 21%, 11%)" : "white"
+
+
+    }}
+    
+    >
+
+    <img alt="bg-dark-desktop" style={{width:"100%",minHeight:"30%"}} src={require(`./assets/images/bg-desktop-${darkMode ?'dark.jpg':'light.jpg' }`)}/>
+   <TodoContainer  darkMode={darkMode} setDarkMode={setDarkMode}/>
     </div>
   );
 }

@@ -1,0 +1,49 @@
+.todoListContainer{
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    }
+
+
+    .todoList{
+        height: 100%;
+        overflow-y:auto;
+    }
+
+    .utilityContainer{
+        display: flex;
+        justify-content: space-around;
+        color: #707287;
+    }
+
+    .utilityContainer span:hover{
+        cursor: pointer;
+        color: #ADAFC6;
+
+    }
+
+
+ 
+
+.cancelBtn{
+
+    margin-left:auto;
+    margin-right:15px;
+    display:none;
+      }
+    
+      .todoListContainer .taskContainer:hover .cancelBtn{
+        display: inline-block;
+      }
+
+      .todoListContainer .taskContainer:nth-child(1){
+        border-radius: 4px;
+      }
+
+      .utilityContainer div span{
+        margin: 0 0 0 20px;
+      }

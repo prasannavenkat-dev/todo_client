@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  letter-spacing:1rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  border: none;
+  background: none;
 }
+
+button:hover{
+  cursor: pointer;
+}
+
+
+
+.taskContainer{
+  box-sizing: border-box;
+  width: 100%;
+
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px ;
+ 
+
+}
+
+
+
+
+.taskContainer input{
+width: 80%;
+border: 0;
+background: transparent;
+height: 100%;
+flex: auto;
+font-family: inherit;
+font-size: inherit;
+
+}
+
+input::placeholder { 
+color: #707287;
+
+}
+
+.checkCircle{
+border-radius: 50%;
+border: 2px solid;
+background: transparent;
+width: 17px;
+height: 17px;
+margin: 17px;
+padding: 4px;
+text-align: center;
+
+}
+
+
+
+.todoListContainer .checkCircle:hover{
+  cursor: pointer;
+  
+}
+
+
+.todoListContainer .taskContainer:hover{
+  cursor: pointer;
+}
+
